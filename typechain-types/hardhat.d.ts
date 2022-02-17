@@ -32,6 +32,42 @@ declare module "hardhat/types/runtime" {
       name: "GreeterV2",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.GreeterV2__factory>;
+    getContractFactory(
+      name: "GovernorBravoDelegator",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorBravoDelegator__factory>;
+    getContractFactory(
+      name: "CompInterface",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.CompInterface__factory>;
+    getContractFactory(
+      name: "GovernorAlpha",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorAlpha__factory>;
+    getContractFactory(
+      name: "GovernorBravoDelegateStorageV1",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorBravoDelegateStorageV1__factory>;
+    getContractFactory(
+      name: "GovernorBravoDelegateStorageV2",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorBravoDelegateStorageV2__factory>;
+    getContractFactory(
+      name: "GovernorBravoDelegatorStorage",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorBravoDelegatorStorage__factory>;
+    getContractFactory(
+      name: "GovernorBravoEvents",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.GovernorBravoEvents__factory>;
+    getContractFactory(
+      name: "TimelockInterface",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TimelockInterface__factory>;
+    getContractFactory(
+      name: "Ser",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Ser__factory>;
 
     getContractAt(
       name: "ERC20Upgradeable",
@@ -58,6 +94,51 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.GreeterV2>;
+    getContractAt(
+      name: "GovernorBravoDelegator",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorBravoDelegator>;
+    getContractAt(
+      name: "CompInterface",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.CompInterface>;
+    getContractAt(
+      name: "GovernorAlpha",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorAlpha>;
+    getContractAt(
+      name: "GovernorBravoDelegateStorageV1",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorBravoDelegateStorageV1>;
+    getContractAt(
+      name: "GovernorBravoDelegateStorageV2",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorBravoDelegateStorageV2>;
+    getContractAt(
+      name: "GovernorBravoDelegatorStorage",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorBravoDelegatorStorage>;
+    getContractAt(
+      name: "GovernorBravoEvents",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.GovernorBravoEvents>;
+    getContractAt(
+      name: "TimelockInterface",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TimelockInterface>;
+    getContractAt(
+      name: "Ser",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Ser>;
 
     // default types
     getContractFactory(
